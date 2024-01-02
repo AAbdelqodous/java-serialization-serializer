@@ -1,6 +1,7 @@
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
+import java.io.ObjectStreamClass;
 
 public class Test {
     public static void main(String[] args) {
@@ -22,8 +23,9 @@ public class Test {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-
         }
 
+        long  serialVersionUID = ObjectStreamClass.lookup(user.getClass()).getSerialVersionUID();
+        System.out.println(serialVersionUID); //-5862822820403043167
     }
 }
