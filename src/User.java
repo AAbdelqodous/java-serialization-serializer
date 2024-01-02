@@ -11,6 +11,7 @@ public class User implements Serializable {
     long userId;
     String name;
     int age;
+    transient String gender;
     void sayHello(){
         System.out.println("Welcome to serialization..");
     }

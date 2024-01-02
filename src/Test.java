@@ -4,7 +4,7 @@ import java.io.ObjectOutputStream;
 
 public class Test {
     public static void main(String[] args) {
-        User user = new User(10001L, "Ahmed Abdelqodous", 36);
+        User user = new User(10001L, "Ahmed Abdelqodous", 36, "Male");
 
         FileOutputStream fos = null;
         ObjectOutputStream oos = null;
